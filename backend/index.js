@@ -7,8 +7,10 @@ import userRouter from "./routes/user.route.js";
 import postRouter from "./routes/post.route.js";
 import commentRouter from "./routes/comment.route.js";
 import webhookRouter from "./routes/webhook.route.js";
+import { clerkMiddleware } from "@clerk/express";
 
 const app = express();
+app.use(clerkMiddleware);
 app.use("/webhooks", webhookRouter);
 app.use(express.json());
 
