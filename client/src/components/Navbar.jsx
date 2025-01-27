@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="w-full h-16 md:h-20 flex items-center justify-between ">
       <Link to="/" className="flex items-center gap-4 text-2xl font-bold  ">
         <Image src="logo.png" alt="r3df1y logo" w={32} h={32} />
-        <span>R3DF1Y</span>
+        <span>EchoPost</span>
       </Link>
       <div className="md:hidden">
         <div
